@@ -14,7 +14,7 @@ function testfunction2(){
 // nulls inside array count as objects
 // string is not considered an array
 
-describe("EQ", () => {
+describe("IsArrayLikeObject", () => {
     it("testing with null", () =>{
         expect(isArrayLikeObject(null)).to.equal(false)
     });
