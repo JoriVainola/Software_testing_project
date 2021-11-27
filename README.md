@@ -3,11 +3,11 @@
 comp.se.200 project
 
 
-### HOW TO RUN
+### How the test
 
--you must install nodejs and npm
+you must have install nodejs and npm
 
--run command
+run command
 ```
 npm run tests
 ```
