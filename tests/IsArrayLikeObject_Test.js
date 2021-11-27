@@ -2,13 +2,17 @@ import chai from "chai";
 import { expect } from "chai";
 import isArrayLikeObject from "../src/isArrayLikeObject.js"
 
-function testfunction(){
+function testfunction1(){
+    return;
+}
+
+function testfunction2(){
     return;
 }
 
 // OBSERVATIONS
 // nulls inside array count as objects
-
+// string is not considered an array
 
 describe("EQ", () => {
     it("testing with null", () =>{
@@ -20,7 +24,11 @@ describe("EQ", () => {
     });
 
     it("testing with function", () =>{
-        expect(isArrayLikeObject(testfunction)).to.equal(false)
+        expect(isArrayLikeObject(testfunction1)).to.equal(false)
+    });
+
+    it("testing with array of functions", () =>{
+        expect(isArrayLikeObject([testfunction1, testfunction2])).to.equal(true)
     });
 
     it("testing with string", () =>{
