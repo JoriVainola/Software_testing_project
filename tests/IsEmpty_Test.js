@@ -27,7 +27,7 @@ describe("IsEmpty", () => {
     it("testing with array containing actual values", () =>{
         expect(isEmpty([1,2,3,4])).to.equal(false)
     });
-    it("testing with non object", () =>{
+    it("testing with function", () =>{
         expect(isEmpty(testfunction1)).to.equal(true)
     });
     it("testing with non object", () =>{
