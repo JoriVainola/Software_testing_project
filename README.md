@@ -9,5 +9,5 @@ you must have install nodejs and npm
 
 run command
 ```
-npm run tests
+npm test
 ```
