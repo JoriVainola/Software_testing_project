@@ -1,27 +1,27 @@
 import chai from "chai";
 import { expect } from "chai";
-import UpperFirst from "../src/UpperFirst.js"
+import upperFirst from "../src/upperFirst.js"
 
-describe("Upperfirst", () => {
+describe("upperFirst", () => {
     it("Testing with upcapped string", () =>{
-        expect(UpperFirst("asd")).to.equal("Asd")
-        expect(UpperFirst("bwr")).to.equal("Bwr")
-        expect(UpperFirst("hello worl")).to.equal("Hello worl")
+        expect(upperFirst("asd")).to.equal("Asd")
+        expect(upperFirst("bwr")).to.equal("Bwr")
+        expect(upperFirst("hello worl")).to.equal("Hello worl")
     });
 
     it("testing already capped string", () =>{
-        expect(UpperFirst("QWE RTY")).to.equal("QWE RTY")
-        expect(UpperFirst("It is rainign today")).to.equal("It is rainign today")
+        expect(upperFirst("QWE RTY")).to.equal("QWE RTY")
+        expect(upperFirst("It is rainign today")).to.equal("It is rainign today")
     });
 
     it("testing special chars", () =>{
-        expect(UpperFirst("#%(")).to.equal("#%(")
-        expect(UpperFirst("=¤¤")).to.equal("=¤¤")
-        expect(UpperFirst("*^()")).to.equal("*^()")
+        expect(upperFirst("#%(")).to.equal("#%(")
+        expect(upperFirst("=¤¤")).to.equal("=¤¤")
+        expect(upperFirst("*^()")).to.equal("*^()")
     });
 
     it("testing numbers", () =>{
-        expect(UpperFirst("247")).to.equal("247")
-        expect(UpperFirst("584.2")).to.equal("584.2")
+        expect(upperFirst("247")).to.equal("247")
+        expect(upperFirst("584.2")).to.equal("584.2")
     });
 })
