@@ -1,4 +1,4 @@
-import ToNumber from "../src/ToNumber.js"
+import ToNumber from "../src/toNumber.js"
 import chai from "chai";
 import { expect } from "chai";
 
