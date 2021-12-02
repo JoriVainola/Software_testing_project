@@ -5,9 +5,13 @@ comp.se.200 project
 
 ### How the test
 
-you must have install nodejs and npm
+you must have installed nodejs and npm
 
 run command
 ```
 npm test
+```
+run individual test
+```
+npm test -- --grep "nameOftheTest"
 ```
