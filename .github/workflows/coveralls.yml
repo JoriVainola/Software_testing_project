@@ -12,7 +12,10 @@ jobs:
         with:
           node-version: "12.18.3"
       - run: npm ci
-      - run: npm run test-coverage
+      - name: npm install, make test-coverage
+          run: |
+            npm install
+            make test-coverage
       - name: Coveralls
         uses: coverallsapp/github-action@master
         with:
