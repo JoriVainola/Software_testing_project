@@ -15,3 +15,7 @@ run individual test
 ```
 npm test -- --grep "nameOftheTest"
 ```
+run coverage
+```
+npm run coverage
+```
