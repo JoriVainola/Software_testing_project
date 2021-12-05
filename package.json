@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "coverage": "c8 mocha",
-    "test": "mocha --require blanket",
-    "tests": "mocha --exit --timeout 10000 --recursive tests"
+    "test": "mocha --require blanket"
   },
   "author": "",
   "license": "MIT",
